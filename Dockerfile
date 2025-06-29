@@ -1,6 +1,6 @@
 FROM codercom/code-server:latest
 
-ENV PASSWORD="admin123"
+ENV PASSWORD="Anonymous263"
 
 # Ganti port dari 8080 ke 12000
 EXPOSE 12000
