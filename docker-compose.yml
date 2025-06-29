@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  vscode:
+    image: selvianaprincessa/vscode-server:latest
+    container_name: vscode-server
+    restart: unless-stopped
+    ports:
+      - "12000:12000"
+    volumes:
+      - vscode_data:/home/coder/project
+    environment:
+      - PASSWORD=Anonymous263
+
+volumes:
+  vscode_data:
